@@ -1,836 +1,273 @@
 <!DOCTYPE html>
-
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AlmaPrint &mdash; Regalos personalizados con alma. Tenerife.</title>
-  <meta name="description" content="AlmaPrint personaliza tazas, cajas, regalos con foto y detalles únicos en Tenerife. Diseño con cuidado, acabados de calidad. Porque esto no es un producto, es un recuerdo." />
-
-  <!-- Open Graph -->
-
-  <meta property="og:title" content="AlmaPrint &mdash; Hecho con alma" />
-  <meta property="og:description" content="Regalos personalizados que no se olvidan. Tazas, cajas, fotos, nombres. Tenerife, Canarias." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://almaprint.es" />
-  <meta property="og:image" content="assets/og-cover.jpg" />
-
-  <!--
-    Tipografía:
-    - Playfair Display: display con carácter, peso dramático, italic expresivo
-    - DM Sans: limpia, moderna, muy legible en cuerpo pequeño
-  -->
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
-
+  <meta name="description" content="AlmaPrint. Personalización premium en DTF, UV DTF, sublimación y vinilo. Diseños con alma para regalos, textil, packaging y detalles especiales." />
+  <title>AlmaPrint | Personalización premium</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-  <!-- Capa de grain global sobre toda la página -->
-
-  <div class="grain-overlay" aria-hidden="true"></div>
-
-  <!-- ============================================================
-       HEADER
-  ============================================================ -->
-
-  <header class="site-header" id="site-header">
-    <div class="header-inner container">
-
-```
-  <!--
-    LOGO: actualmente texto + badge CSS.
-    SUSTITUIR por: <img src="assets/logo.svg" alt="AlmaPrint" class="logo-img" />
-    cuando el logo real esté listo.
-  -->
-  <a href="#inicio" class="logo" aria-label="AlmaPrint &mdash; inicio">
-    <div class="logo-badge" aria-hidden="true">A</div>
-    <div class="logo-wordmark">
-      <span class="logo-name">AlmaPrint</span>
-      <span class="logo-tagline">Hecho con alma</span>
-    </div>
-  </a>
-
-  <nav class="main-nav" aria-label="Navegación principal">
-    <a href="#productos">Productos</a>
-    <a href="#proceso">Proceso</a>
-    <a href="#galeria">Galería</a>
-    <a href="#faq">FAQ</a>
-  </nav>
-
-  <a href="#contacto" class="header-cta">
-    Pedir ahora
-    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-      <path d="M2.5 7h9M8 3.5l3.5 3.5L8 10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-  </a>
-
-  <!-- Hamburger: dos líneas en lugar de tres para un look más sofisticado -->
-  <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
-    <span></span>
-    <span></span>
-  </button>
-</div>
-
-<!-- Menú móvil desplegable -->
-<div class="mobile-menu" id="mobile-menu" aria-hidden="true">
-  <nav aria-label="Menú móvil">
-    <a href="#productos">Productos</a>
-    <a href="#proceso">Proceso</a>
-    <a href="#galeria">Galería</a>
-    <a href="#faq">FAQ</a>
-    <a href="#contacto" class="mobile-menu-cta">Empezar un proyecto &rarr;</a>
-  </nav>
-</div>
-```
-
-  </header>
-
-  <!-- ============================================================
-       1. HERO PRINCIPAL
-  ============================================================ -->
-
-  <section class="hero" id="inicio" aria-label="Bienvenida AlmaPrint">
-
-```
-<!-- Línea vertical dorada: elemento estructural, no decorativo -->
-<div class="hero-spine" aria-hidden="true"></div>
-
-<!-- Número de sección en el fondo: da profundidad editorial -->
-<div class="hero-bg-num" aria-hidden="true">01</div>
-
-<div class="container hero-layout">
-
-  <!-- Columna de texto -->
-  <div class="hero-copy">
-
-    <p class="eyebrow" data-reveal>
-      <span class="eyebrow-line" aria-hidden="true"></span>
-      Personalización artesanal &mdash; Tenerife
-    </p>
-
-    <h1 class="hero-heading" data-reveal data-delay="1">
-      Regala algo<br />
-      <em>que no</em><br />
-      se&nbsp;olvida.
-    </h1>
-
-    <p class="hero-body" data-reveal data-delay="2">
-      Transformamos tazas, cajas y detalles en objetos cargados de
-      significado. Diseñados para quien los recibe. Entregados para emocionar.
-    </p>
-
-    <div class="hero-actions" data-reveal data-delay="3">
-      <a href="#contacto" class="btn-gold">Quiero personalizar</a>
-      <a href="#productos" class="btn-ghost-dark">
-        Ver productos
-        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-          <path d="M2.5 7h9M8 3.5L11.5 7 8 10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+  <div class="site-shell">
+    <header class="topbar">
+      <a href="#inicio" class="brand">
+        <span class="brand-mark">A</span>
+        <span class="brand-text">
+          <strong>AlmaPrint</strong>
+          <small>Impresiones con alma</small>
+        </span>
       </a>
-    </div>
 
-    <!-- Prueba social compacta -->
-    <div class="hero-proof" data-reveal data-delay="4">
-      <div class="proof-item">
-        <strong>+500</strong>
-        <span>pedidos entregados</span>
+      <nav class="main-nav" id="mainNav">
+        <a href="#categorias">Categorías</a>
+        <a href="#destacados">Destacados</a>
+        <a href="#proceso">Cómo trabajamos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <a class="cta cta--small" href="#contacto">Pedir presupuesto</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-copy">
+          <div class="eyebrow">Diseño, impresión y detalles que dejan huella</div>
+          <h1>Una web con alma, pensada para vender desde el primer vistazo.</h1>
+          <p>
+            DTF, UV DTF, sublimación y vinilo con una presentación elegante, clara y directa.
+            Sin ruido. Sin vueltas. El cliente entra, ve, entiende y te escribe.
+          </p>
+
+          <div class="hero-actions">
+            <a class="cta" href="#destacados">Ver productos</a>
+            <a class="cta cta--ghost" href="#contacto">Hablar por WhatsApp</a>
+          </div>
+
+          <ul class="hero-points">
+            <li>Diseño contigo</li>
+            <li>Acabado premium</li>
+            <li>Regalos que se recuerdan</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card hero-card--main">
+            <img src="assets/tarjetas-almaprint.jpeg" alt="Tarjetas de visita de AlmaPrint" />
+          </div>
+          <div class="hero-badge">
+            <img src="assets/sello-hecho-con-alma.png" alt="Sello Hecho con Alma de AlmaPrint" />
+          </div>
+          <div class="floating-note note-top">Premium, cercano y claro</div>
+          <div class="floating-note note-bottom">Estructura lista para catálogo real</div>
+        </div>
+      </section>
+
+      <section class="trustbar">
+        <div>DTF</div>
+        <div>UV DTF</div>
+        <div>Sublimación</div>
+        <div>Vinilo</div>
+        <div>Diseño personalizado</div>
+        <div>Atención directa</div>
+      </section>
+
+      <section class="section" id="categorias">
+        <div class="section-head">
+          <span class="section-kicker">Categorías</span>
+          <h2>Entrar, mirar y encontrar. Justo como debe funcionar.</h2>
+          <p>
+            Inspirada en la claridad de una tienda potente, pero con el tacto de una marca artesanal.
+            Aquí el cliente no se pierde, aterriza.
+          </p>
+        </div>
+
+        <div class="category-grid">
+          <article class="category-card category-card--wide">
+            <div>
+              <span class="pill">Más pedido</span>
+              <h3>Regalos personalizados</h3>
+              <p>Tazas, detalles para parejas, cumpleaños, aniversarios y momentos que merecen algo más que un regalo de gasolinera.</p>
+            </div>
+            <a href="#contacto">Solicitar idea</a>
+          </article>
+
+          <article class="category-card">
+            <h3>Textil</h3>
+            <p>Camisetas, sudaderas, bodys, bolsas y prendas con diseño limpio y producción cuidada.</p>
+          </article>
+
+          <article class="category-card">
+            <h3>Packaging</h3>
+            <p>Cajas, etiquetas, pegatinas y detalles visuales que hacen que el producto entre ya vestido de gala.</p>
+          </article>
+
+          <article class="category-card">
+            <h3>Eventos</h3>
+            <p>Bautizos, comuniones, bodas, cumpleaños y mesas dulces con identidad propia.</p>
+          </article>
+
+          <article class="category-card">
+            <h3>Empresas</h3>
+            <p>Tarjetas, merchandising, branding físico y materiales para que la marca se vea seria y bonita a la vez.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--contrast" id="destacados">
+        <div class="section-head">
+          <span class="section-kicker">Destacados</span>
+          <h2>Productos listos para enamorar antes de pedir presupuesto.</h2>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card featured-image-card">
+            <div class="product-media">
+              <img src="assets/tarjetas-almaprint.jpeg" alt="Imagen principal de marca AlmaPrint" />
+            </div>
+            <div class="product-copy">
+              <h3>Imagen de marca</h3>
+              <p>Tarjetas, presencia visual y primera impresión que no llega en chanclas.</p>
+              <span>Ideal para negocios que quieren verse premium</span>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-top">
+              <span class="tag">Top ventas</span>
+              <strong>Desde 12,90 €</strong>
+            </div>
+            <h3>Tazas personalizadas</h3>
+            <p>Diseños emotivos, divertidos o elegantes con acabado pensado para regalar y lucir.</p>
+            <a href="#contacto">Quiero esta línea</a>
+          </article>
+
+          <article class="product-card">
+            <div class="product-top">
+              <span class="tag">Nuevo</span>
+              <strong>Desde 6,50 €</strong>
+            </div>
+            <h3>Pegatinas y etiquetas</h3>
+            <p>Perfectas para packaging, velas, cajas y presentaciones con carácter de marca.</p>
+            <a href="#contacto">Ver opciones</a>
+          </article>
+
+          <article class="product-card">
+            <div class="product-top">
+              <span class="tag">Premium</span>
+              <strong>Desde 16,90 €</strong>
+            </div>
+            <h3>Camisetas y textil</h3>
+            <p>Prendas que no parecen improvisadas. Diseño claro, visual y con personalidad.</p>
+            <a href="#contacto">Pedir propuesta</a>
+          </article>
+
+          <article class="product-card">
+            <div class="product-top">
+              <span class="tag">Evento</span>
+              <strong>Desde 18,00 €</strong>
+            </div>
+            <h3>Detalles para celebraciones</h3>
+            <p>Recuerdos personalizados para fechas señaladas, con presentación a la altura.</p>
+            <a href="#contacto">Preparar idea</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section process" id="proceso">
+        <div class="section-head">
+          <span class="section-kicker">Cómo trabajamos</span>
+          <h2>Un flujo simple que evita el caos creativo con olor a chat infinito.</h2>
+        </div>
+
+        <div class="steps">
+          <article class="step-card">
+            <span>01</span>
+            <h3>Nos cuentas la idea</h3>
+            <p>Qué quieres personalizar, para quién es y qué estilo buscas.</p>
+          </article>
+          <article class="step-card">
+            <span>02</span>
+            <h3>Te proponemos diseño</h3>
+            <p>Te guiamos para que el resultado no se quede en “bueno… está bien”.</p>
+          </article>
+          <article class="step-card">
+            <span>03</span>
+            <h3>Producción cuidada</h3>
+            <p>Material, impresión y acabado pensados para que se note el mimo.</p>
+          </article>
+          <article class="step-card">
+            <span>04</span>
+            <h3>Entrega con presencia</h3>
+            <p>Tu pedido llega listo para impresionar, no solo para cumplir.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section brand-showcase">
+        <div class="brand-showcase__content">
+          <span class="section-kicker">Sello de marca</span>
+          <h2>“Hecho con alma” no va de postureo. Va de intención.</h2>
+          <p>
+            El negro aporta elegancia, el dorado sube el nivel y el violeta os da identidad.
+            Esa mezcla ya tiene cara. Ahora también tiene web.
+          </p>
+        </div>
+        <div class="brand-showcase__visual">
+          <img src="assets/sello-hecho-con-alma.png" alt="Sello Hecho con Alma" />
+        </div>
+      </section>
+
+      <section class="section contact" id="contacto">
+        <div class="contact-card">
+          <div class="contact-copy">
+            <span class="section-kicker">Contacto</span>
+            <h2>¿Montamos un pedido bonito de los que hacen tilín?</h2>
+            <p>
+              Esta base ya está pensada para crecer con catálogo, fichas de producto, filtros y más imágenes reales.
+              Ahora mismo ya transmite marca, orden y venta.
+            </p>
+          </div>
+
+          <form class="contact-form">
+            <label>
+              Nombre
+              <input type="text" placeholder="Tu nombre" />
+            </label>
+            <label>
+              Qué quieres personalizar
+              <input type="text" placeholder="Taza, camiseta, caja, vela..." />
+            </label>
+            <label>
+              Cuéntanos la idea
+              <textarea placeholder="Describe el diseño, cantidad, estilo o fecha ideal"></textarea>
+            </label>
+            <div class="form-actions">
+              <a class="cta" href="mailto:contacto@almaprint.es">Pedir por email</a>
+              <a class="cta cta--ghost" href="https://instagram.com/almaprint" target="_blank" rel="noopener">Ver Instagram</a>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <strong>AlmaPrint</strong>
+        <p>Diseño y personalización con una estética elegante, cercana y muy vendible.</p>
       </div>
-      <div class="proof-sep" aria-hidden="true"></div>
-      <div class="proof-item">
-        <strong>5&thinsp;★</strong>
-        <span>valoración media</span>
+      <div>
+        <span>Base visual creada con tus imágenes actuales</span>
       </div>
-      <div class="proof-sep" aria-hidden="true"></div>
-      <div class="proof-item">
-        <strong>100&thinsp;%</strong>
-        <span>diseño a medida</span>
-      </div>
-    </div>
-
+    </footer>
   </div>
-
-  <!-- Columna visual -->
-  <!--
-    VISUAL HERO — SUSTITUIR el div.hero-visual-ph por:
-    <img src="assets/hero-mockup.jpg" alt="Producto personalizado AlmaPrint" class="hero-visual-img" />
-  -->
-  <div class="hero-visual" data-reveal data-delay="2">
-    <div class="hero-visual-ph" role="img" aria-label="Mockup de producto personalizado — placeholder">
-      <div class="hvp-content">
-        <p class="hvp-file">assets/hero-mockup.jpg</p>
-        <p class="hvp-label">Imagen principal</p>
-      </div>
-      <!-- Tags flotantes de prueba -->
-      <div class="float-tag float-tag--a" aria-hidden="true">
-        <span class="ft-pip"></span>
-        Diseño único
-      </div>
-      <div class="float-tag float-tag--b" aria-hidden="true">
-        <span class="ft-pip"></span>
-        Entrega en Tenerife
-      </div>
-    </div>
-  </div>
-
-</div>
-
-<!-- Cue de scroll -->
-<div class="scroll-cue" aria-hidden="true">
-  <span class="sc-line"></span>
-  <span class="sc-label">Descubre</span>
-</div>
-```
-
-  </section>
-
-  <!-- ============================================================
-       SEPARADOR EDITORIAL
-  ============================================================ -->
-
-  <div class="editorial-rule" aria-hidden="true">
-    <span></span>
-    <span class="er-mark">AlmaPrint &bull; Tenerife</span>
-    <span></span>
-  </div>
-
-  <!-- ============================================================
-       2. PROPUESTA DE VALOR
-  ============================================================ -->
-
-  <section class="section-value" id="valor">
-    <div class="container">
-
-```
-  <header class="value-header" data-reveal>
-    <p class="eyebrow">
-      <span class="eyebrow-line" aria-hidden="true"></span>
-      Por qué elegirnos
-    </p>
-    <h2 class="section-heading">
-      No vendemos productos.<br />
-      <em>Creamos recuerdos.</em>
-    </h2>
-  </header>
-
-  <div class="value-grid">
-
-    <article class="value-card" data-reveal>
-      <p class="vc-num" aria-hidden="true">01</p>
-      <h3>Diseño hecho para ti</h3>
-      <p>Nada es una plantilla. Cada pieza parte de tu historia, tu persona o tu momento. Lo interpretamos y lo convertimos en algo que tiene sentido real.</p>
-    </article>
-
-    <article class="value-card" data-reveal data-delay="1">
-      <p class="vc-num" aria-hidden="true">02</p>
-      <h3>Técnicas que duran</h3>
-      <p>DTF, UV DTF, sublimación y vinilo. Elegimos el proceso correcto para cada material, para que el color, el tacto y el acabado estén a la altura del momento.</p>
-    </article>
-
-    <article class="value-card" data-reveal data-delay="2">
-      <p class="vc-num" aria-hidden="true">03</p>
-      <h3>El packaging es parte del regalo</h3>
-      <p>Cuidamos cada entrega como si fuera la nuestra. La caja, el papel, la tarjeta: todo pensado para que la emoción empiece antes de abrir el producto.</p>
-    </article>
-
-    <article class="value-card" data-reveal data-delay="3">
-      <p class="vc-num" aria-hidden="true">04</p>
-      <h3>Trato directo, sin complicaciones</h3>
-      <p>Cuéntanos tu idea por WhatsApp o Instagram. Sin formularios, sin esperas. Una persona real al otro lado desde el primer mensaje.</p>
-    </article>
-
-  </div>
-</div>
-```
-
-  </section>
-
-  <!-- ============================================================
-       3. PRODUCTOS DESTACADOS
-  ============================================================ -->
-
-  <section class="section-products" id="productos">
-
-```
-<div class="container products-header" data-reveal>
-  <div class="ph-left">
-    <p class="eyebrow">
-      <span class="eyebrow-line" aria-hidden="true"></span>
-      Qué personalizamos
-    </p>
-    <h2 class="section-heading">
-      Cada objeto,<br />
-      <em>una historia.</em>
-    </h2>
-  </div>
-  <p class="ph-desc">
-    Trabajamos con una variedad amplia de productos, siempre con el mismo nivel de cuidado.
-    Si no ves lo que buscas, pregúntanos. Seguramente podemos hacerlo.
-  </p>
-</div>
-
-<!--
-  GRID DE PRODUCTOS — cada .pt-thumb es un placeholder.
-  SUSTITUIR por: <img src="assets/product-NOM.jpg" alt="descripción" />
-  dentro del .product-card
--->
-<div class="container products-grid">
-
-  <article class="product-card" data-reveal>
-    <div class="pt-thumb pt-thumb--1" role="img" aria-label="Taza personalizada con foto o nombre">
-      <span class="pt-file" aria-hidden="true">product-taza.jpg</span>
-      <span class="pt-badge">Más pedido</span>
-    </div>
-    <div class="pc-body">
-      <h3>Tazas personalizadas</h3>
-      <p>Con foto, nombre o frase. El regalo más íntimo de cada mañana, hecho a tu medida.</p>
-      <a href="#contacto" class="pc-link">Personaliza la tuya &rarr;</a>
-    </div>
-  </article>
-
-  <article class="product-card product-card--tall" data-reveal data-delay="1">
-    <div class="pt-thumb pt-thumb--2" role="img" aria-label="Regalos con foto">
-      <span class="pt-file" aria-hidden="true">product-foto.jpg</span>
-    </div>
-    <div class="pc-body">
-      <h3>Regalos con foto</h3>
-      <p>Tu momento favorito convertido en un objeto que permanece. Para aniversarios, cumpleaños y despedidas.</p>
-      <a href="#contacto" class="pc-link">Pedir el tuyo &rarr;</a>
-    </div>
-  </article>
-
-  <article class="product-card" data-reveal data-delay="2">
-    <div class="pt-thumb pt-thumb--3" role="img" aria-label="Cajas y packaging personalizados">
-      <span class="pt-file" aria-hidden="true">product-caja.jpg</span>
-    </div>
-    <div class="pc-body">
-      <h3>Cajas y packaging</h3>
-      <p>La presentación es parte del regalo. Diseñada para que el unboxing sea ya un momento especial.</p>
-      <a href="#contacto" class="pc-link">Diseña tu caja &rarr;</a>
-    </div>
-  </article>
-
-  <article class="product-card" data-reveal>
-    <div class="pt-thumb pt-thumb--4" role="img" aria-label="Diseños con nombre o frase">
-      <span class="pt-file" aria-hidden="true">product-nombre.jpg</span>
-    </div>
-    <div class="pc-body">
-      <h3>Nombre o frase</h3>
-      <p>Prendas, accesorios y objetos con tu mensaje. Diseños limpios, tipografía cuidada, resultado elegante.</p>
-      <a href="#contacto" class="pc-link">Añade tu mensaje &rarr;</a>
-    </div>
-  </article>
-
-  <article class="product-card product-card--tall" data-reveal data-delay="1">
-    <div class="pt-thumb pt-thumb--5" role="img" aria-label="Detalles para cumpleaños y eventos">
-      <span class="pt-file" aria-hidden="true">product-detalles.jpg</span>
-      <span class="pt-badge">Muy popular</span>
-    </div>
-    <div class="pc-body">
-      <h3>Detalles y kits</h3>
-      <p>Cumpleaños, aniversarios, bodas, comuniones. Kits completos para hacer sentir especial a quien más quieres.</p>
-      <a href="#contacto" class="pc-link">Ver opciones &rarr;</a>
-    </div>
-  </article>
-
-  <article class="product-card" data-reveal data-delay="2">
-    <div class="pt-thumb pt-thumb--6" role="img" aria-label="Personalización DTF y vinilo">
-      <span class="pt-file" aria-hidden="true">product-dtf.jpg</span>
-    </div>
-    <div class="pc-body">
-      <h3>DTF &amp; Vinilo</h3>
-      <p>Transfers de alta resolución para textil y superficies duras. Ideal para eventos, marcas y series pequeñas.</p>
-      <a href="#contacto" class="pc-link">Cuéntanos tu idea &rarr;</a>
-    </div>
-  </article>
-
-</div>
-```
-
-  </section>
-
-  <!-- ============================================================
-       4. SECCIÓN EDITORIAL "HECHO CON ALMA"
-  ============================================================ -->
-
-  <section class="section-alma" id="alma">
-
-```
-<!-- Palabra de fondo: tipografía al límite del viewport -->
-<p class="alma-bg-word" aria-hidden="true">recuerdo</p>
-
-<div class="container alma-layout">
-
-  <div class="alma-col-left" data-reveal>
-    <p class="eyebrow eyebrow--gold">
-      <span class="eyebrow-line" aria-hidden="true"></span>
-      Nuestra filosofía
-    </p>
-    <!--
-      SELLO — placeholder visual.
-      SUSTITUIR por: <img src="assets/sello-hecho-con-alma.svg" alt="Sello: Hecho con alma" class="alma-seal-img" />
-    -->
-    <div class="alma-seal" aria-label="Sello AlmaPrint — Hecho con alma">
-      <svg class="alma-seal-svg" viewBox="0 0 200 200" aria-hidden="true">
-        <defs>
-          <path id="circle-path" d="M 100,100 m -72,0 a 72,72 0 1,1 144,0 a 72,72 0 1,1 -144,0"/>
-        </defs>
-        <circle cx="100" cy="100" r="85" fill="none" stroke="rgba(212,175,55,0.2)" stroke-width="1"/>
-        <circle cx="100" cy="100" r="72" fill="none" stroke="rgba(212,175,55,0.35)" stroke-width="0.75"/>
-        <text font-family="DM Sans, sans-serif" font-size="10.5" font-weight="500" letter-spacing="3.5" fill="#D4AF37" opacity="0.75">
-          <textPath href="#circle-path" startOffset="0%">ALMAPRINT &bull; HECHO CON ALMA &bull; TENERIFE &bull;</textPath>
-        </text>
-        <text x="100" y="95" text-anchor="middle" font-family="Playfair Display, serif" font-size="26" font-style="italic" fill="white" opacity="0.9">Alma</text>
-        <text x="100" y="118" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="9" font-weight="500" letter-spacing="4" fill="#D4AF37" opacity="0.6">PRINT</text>
-      </svg>
-    </div>
-  </div>
-
-  <div class="alma-col-right" data-reveal data-delay="1">
-    <blockquote class="alma-quote">
-      &ldquo;Esto no es<br />
-      un producto.<br />
-      <em>Es un recuerdo.&rdquo;</em>
-    </blockquote>
-
-    <p class="alma-body">
-      Detrás de cada encargo hay alguien que quiere hacer sentir especial
-      a otra persona. Eso nos importa. Por eso diseñamos, elegimos materiales,
-      cuidamos el packaging y entregamos cada pieza como si fuera nuestra.
-    </p>
-
-    <p class="alma-body alma-body--strong">
-      Hecho con alma. Siempre.
-    </p>
-
-    <a href="#contacto" class="btn-outline-gold">Empieza tu proyecto</a>
-  </div>
-
-</div>
-
-<!--
-  Tarjeta de packaging decorativa.
-  Representa la tarjeta física que se incluirá en cada envío.
--->
-<div class="container" data-reveal>
-  <div class="packaging-card">
-    <span class="pkc-brand">AlmaPrint</span>
-    <span class="pkc-text">Esto no es un producto, es un recuerdo</span>
-    <span class="pkc-rule" aria-hidden="true"></span>
-    <span class="pkc-sub">Hecho con alma &mdash; Tenerife</span>
-  </div>
-</div>
-```
-
-  </section>
-
-  <!-- ============================================================
-       5. PROCESO
-  ============================================================ -->
-
-  <section class="section-process" id="proceso">
-    <div class="container">
-
-```
-  <header class="process-header" data-reveal>
-    <p class="eyebrow">
-      <span class="eyebrow-line" aria-hidden="true"></span>
-      Cómo trabajamos
-    </p>
-    <h2 class="section-heading">
-      Simple, cercano<br />
-      <em>y sin sorpresas.</em>
-    </h2>
-  </header>
-
-  <ol class="process-list">
-
-    <li class="process-step" data-reveal>
-      <div class="ps-number" aria-hidden="true">01</div>
-      <div class="ps-body">
-        <h3>Cuéntanos tu idea</h3>
-        <p>Escríbenos por WhatsApp o Instagram. Sin formularios ni pasos previos. Tu idea y nosotros al otro lado, desde el primer mensaje.</p>
-      </div>
-    </li>
-
-    <li class="process-step" data-reveal data-delay="1">
-      <div class="ps-number" aria-hidden="true">02</div>
-      <div class="ps-body">
-        <h3>Diseñamos juntos</h3>
-        <p>Te enviamos una propuesta de diseño. La ajustamos las veces que haga falta hasta que quede exactamente como lo imaginas.</p>
-      </div>
-    </li>
-
-    <li class="process-step" data-reveal data-delay="2">
-      <div class="ps-number" aria-hidden="true">03</div>
-      <div class="ps-body">
-        <h3>Producimos con cuidado</h3>
-        <p>Elegimos la técnica correcta para cada material. DTF, UV DTF, sublimación o vinilo: siempre el acabado que merece tu idea.</p>
-      </div>
-    </li>
-
-    <li class="process-step" data-reveal data-delay="3">
-      <div class="ps-number" aria-hidden="true">04</div>
-      <div class="ps-body">
-        <h3>Lo entregamos listo para emocionar</h3>
-        <p>Packaging cuidado, tarjeta incluida. Solo tienes que entregarlo. La emoción la ponemos nosotros.</p>
-      </div>
-    </li>
-
-  </ol>
-</div>
-```
-
-  </section>
-
-  <!-- ============================================================
-       6. GALERÍA
-  ============================================================ -->
-
-  <section class="section-gallery" id="galeria">
-
-```
-<div class="container gallery-header" data-reveal>
-  <div>
-    <p class="eyebrow">
-      <span class="eyebrow-line" aria-hidden="true"></span>
-      Galería de trabajos
-    </p>
-    <h2 class="section-heading">
-      Cada pieza,<br />
-      <em>un momento único.</em>
-    </h2>
-  </div>
-  <a href="https://instagram.com/almaprint" target="_blank" rel="noopener noreferrer" class="btn-ghost-dark gallery-btn">
-    @almaprint en Instagram
-    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-      <path d="M2.5 7h9M8 3.5L11.5 7 8 10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-  </a>
-</div>
-
-<!--
-  MOSAICO DE GALERÍA.
-  SUSTITUIR cada .gi-ph por: <img src="assets/gallery-N.jpg" alt="descripción del trabajo" />
--->
-<div class="gallery-mosaic">
-
-  <div class="gi gi--tall" data-reveal>
-    <div class="gi-ph gi-ph--1" role="img" aria-label="Galería — trabajo 1">
-      <span>gallery-1.jpg</span>
-    </div>
-  </div>
-
-  <div class="gi" data-reveal data-delay="1">
-    <div class="gi-ph gi-ph--2" role="img" aria-label="Galería — trabajo 2">
-      <span>gallery-2.jpg</span>
-    </div>
-  </div>
-
-  <div class="gi" data-reveal data-delay="2">
-    <div class="gi-ph gi-ph--3" role="img" aria-label="Galería — trabajo 3">
-      <span>gallery-3.jpg</span>
-    </div>
-  </div>
-
-  <div class="gi gi--wide" data-reveal data-delay="1">
-    <div class="gi-ph gi-ph--4" role="img" aria-label="Galería — trabajo 4">
-      <span>gallery-4.jpg</span>
-    </div>
-  </div>
-
-  <div class="gi" data-reveal data-delay="2">
-    <div class="gi-ph gi-ph--5" role="img" aria-label="Galería — trabajo 5">
-      <span>gallery-5.jpg</span>
-    </div>
-  </div>
-
-</div>
-```
-
-  </section>
-
-  <!-- ============================================================
-       7. TESTIMONIOS Y CONFIANZA
-  ============================================================ -->
-
-  <section class="section-testimonials" id="testimonios">
-    <div class="container">
-
-```
-  <header class="testimonials-header" data-reveal>
-    <p class="eyebrow eyebrow--gold">
-      <span class="eyebrow-line" aria-hidden="true"></span>
-      Lo que dicen
-    </p>
-    <h2 class="section-heading section-heading--light">
-      Personas reales,<br />
-      <em>momentos que perduran.</em>
-    </h2>
-  </header>
-
-  <div class="testimonials-row">
-
-    <article class="tcard" data-reveal>
-      <p class="tcard-stars" aria-label="5 sobre 5 estrellas">★★★★★</p>
-      <blockquote>
-        &ldquo;Pedí una taza personalizada para el cumpleaños de mi madre y quedó preciosa.
-        La presentación, el packaging, la tarjeta&hellip; Lloró al abrirlo. Repetiremos seguro.&rdquo;
-      </blockquote>
-      <footer>
-        <strong class="tcard-name">Laura M.</strong>
-        <span class="tcard-place">Santa Cruz de Tenerife</span>
-      </footer>
-    </article>
-
-    <article class="tcard tcard--featured" data-reveal data-delay="1">
-      <p class="tcard-stars" aria-label="5 sobre 5 estrellas">★★★★★</p>
-      <blockquote>
-        &ldquo;Encargué los detalles para una boda y superaron todas mis expectativas.
-        Rápidos, con mucho cariño y exactamente lo que pedí. Lo mejor: el trato directo.&rdquo;
-      </blockquote>
-      <footer>
-        <strong class="tcard-name">Marta R.</strong>
-        <span class="tcard-place">La Laguna</span>
-      </footer>
-    </article>
-
-    <article class="tcard" data-reveal data-delay="2">
-      <p class="tcard-stars" aria-label="5 sobre 5 estrellas">★★★★★</p>
-      <blockquote>
-        &ldquo;Una caja personalizada con foto y frase para un aniversario. Simple, elegante,
-        con un impacto brutal. Ya tengo el próximo encargo preparado.&rdquo;
-      </blockquote>
-      <footer>
-        <strong class="tcard-name">Carlos T.</strong>
-        <span class="tcard-place">Puerto de la Cruz</span>
-      </footer>
-    </article>
-
-  </div>
-
-  <div class="trust-strip" data-reveal>
-    <p>
-      Ideal para <mark>cumpleaños</mark>, <mark>aniversarios</mark>, <mark>bodas</mark>
-      y cualquier regalo que quieras que se recuerde.
-      <em>En Tenerife y toda Canarias.</em>
-    </p>
-  </div>
-
-</div>
-```
-
-  </section>
-
-  <!-- ============================================================
-       8. FAQ
-  ============================================================ -->
-
-  <section class="section-faq" id="faq">
-    <div class="container faq-layout">
-
-```
-  <aside class="faq-aside" data-reveal>
-    <p class="eyebrow">
-      <span class="eyebrow-line" aria-hidden="true"></span>
-      FAQ
-    </p>
-    <h2 class="section-heading">
-      Dudas<br />
-      <em>resueltas.</em>
-    </h2>
-    <p class="faq-aside-desc">
-      Si no encuentras lo que buscas, escríbenos. Respondemos siempre.
-    </p>
-    <a href="#contacto" class="btn-ghost-dark">Contactar &rarr;</a>
-  </aside>
-
-  <div class="faq-items">
-
-    <details class="faq-item" data-reveal>
-      <summary>¿Qué tipo de productos personalizáis?</summary>
-      <p>Tazas, cajas, textil, láminas, accesorios y mucho más. Si tienes una idea que no está aquí, cuéntanosla. Lo más probable es que podamos hacerla realidad.</p>
-    </details>
-
-    <details class="faq-item" data-reveal>
-      <summary>¿Se puede personalizar con foto, nombre o frase?</summary>
-      <p>Sí, absolutamente. Trabajamos con fotos, nombres, fechas, frases, ilustraciones y logos. Tú nos das la idea y nosotros la convertimos en un diseño limpio y bien resuelto.</p>
-    </details>
-
-    <details class="faq-item" data-reveal>
-      <summary>¿Hacéis pedidos individuales y en pequeñas cantidades?</summary>
-      <p>Sí. Trabajamos con pedidos únicos y con series pequeñas. Somos perfectos para regalos individuales, detalles de eventos y lotes personalizados.</p>
-    </details>
-
-    <details class="faq-item" data-reveal>
-      <summary>¿Trabajáis solo en Tenerife o hacéis envíos?</summary>
-      <p>Nuestra base está en Tenerife y atendemos principalmente en Canarias. Para envíos fuera de las islas, consúltanos y buscamos juntos la mejor opción.</p>
-    </details>
-
-    <details class="faq-item" data-reveal>
-      <summary>¿Cuánto tarda un pedido?</summary>
-      <p>El plazo habitual es de <strong>3 a 7 días hábiles</strong> desde que confirmas el diseño. Si necesitas algo urgente, dísnoslo y hacemos lo posible.</p>
-    </details>
-
-    <details class="faq-item" data-reveal>
-      <summary>¿Cómo empiezo a hacer un pedido?</summary>
-      <p>Muy simple: escríbenos por WhatsApp o Instagram con tu idea. Sin formularios ni pasos previos. En cuanto nos escribes, ya estamos en ello.</p>
-    </details>
-
-  </div>
-</div>
-```
-
-  </section>
-
-  <!-- ============================================================
-       9. CTA FINAL
-  ============================================================ -->
-
-  <section class="section-cta" id="contacto">
-
-```
-<p class="cta-bg-word" aria-hidden="true">alma</p>
-
-<div class="container cta-layout">
-
-  <div class="cta-copy" data-reveal>
-    <p class="eyebrow eyebrow--gold">
-      <span class="eyebrow-line" aria-hidden="true"></span>
-      Empieza ahora
-    </p>
-    <h2 class="cta-heading">
-      Tu idea merece<br />
-      <em>convertirse</em><br />
-      en algo real.
-    </h2>
-    <p class="cta-body">
-      Cuéntanos qué tienes en mente. Lo diseñamos, lo producimos y lo entregamos
-      listo para emocionar. Sin complicaciones, con alma.
-    </p>
-  </div>
-
-  <div class="cta-channels" data-reveal data-delay="1">
-
-    <!-- WhatsApp — SUSTITUIR número real en el href -->
-    <a href="https://wa.me/34XXXXXXXXX?text=Hola%2C%20me%20gustar%C3%ADa%20hacer%20un%20pedido%20personalizado."
-       target="_blank" rel="noopener noreferrer"
-       class="channel-btn channel-btn--wa">
-      <svg class="cb-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-      </svg>
-      <div class="cb-text">
-        <strong>WhatsApp</strong>
-        <span>Respuesta en menos de 24&nbsp;h</span>
-      </div>
-      <svg class="cb-arrow" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-        <path d="M2.5 7h9M8 3.5L11.5 7 8 10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </a>
-
-    <!-- Instagram -->
-    <a href="https://instagram.com/almaprint"
-       target="_blank" rel="noopener noreferrer"
-       class="channel-btn channel-btn--ig">
-      <svg class="cb-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
-      </svg>
-      <div class="cb-text">
-        <strong>Instagram</strong>
-        <span>@almaprint</span>
-      </div>
-      <svg class="cb-arrow" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-        <path d="M2.5 7h9M8 3.5L11.5 7 8 10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </a>
-
-    <!-- Email — SUSTITUIR correo real -->
-    <a href="mailto:hola@almaprint.es" class="channel-btn channel-btn--email">
-      <svg class="cb-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-        <rect x="2" y="4" width="20" height="16" rx="2.5"/>
-        <path d="m2 7 10 7 10-7"/>
-      </svg>
-      <div class="cb-text">
-        <strong>Correo</strong>
-        <span>hola@almaprint.es</span>
-      </div>
-      <svg class="cb-arrow" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-        <path d="M2.5 7h9M8 3.5L11.5 7 8 10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </a>
-
-  </div>
-</div>
-```
-
-  </section>
-
-  <!-- ============================================================
-       FOOTER
-  ============================================================ -->
-
-  <footer class="site-footer">
-    <div class="container footer-main">
-
-```
-  <div class="footer-brand">
-    <!-- LOGO FOOTER — sustituir por <img src="assets/logo.svg" alt="AlmaPrint"> -->
-    <a href="#inicio" class="logo logo--footer" aria-label="AlmaPrint inicio">
-      <div class="logo-badge" aria-hidden="true">A</div>
-      <div class="logo-wordmark">
-        <span class="logo-name">AlmaPrint</span>
-        <span class="logo-tagline">Hecho con alma</span>
-      </div>
-    </a>
-    <p class="footer-desc">
-      Personalización de regalos y productos con enfoque emocional.
-      Diseñados para quien los recibe. Tenerife, Canarias.
-    </p>
-    <div class="footer-social">
-      <a href="https://instagram.com/almaprint" target="_blank" rel="noopener noreferrer" aria-label="Instagram AlmaPrint">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-      </a>
-      <a href="https://wa.me/34XXXXXXXXX" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp AlmaPrint">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      </a>
-    </div>
-  </div>
-
-  <nav class="footer-nav" aria-label="Navegación footer">
-    <p class="footer-nav-label">Menú</p>
-    <ul>
-      <li><a href="#productos">Productos</a></li>
-      <li><a href="#proceso">Cómo funciona</a></li>
-      <li><a href="#galeria">Galería</a></li>
-      <li><a href="#faq">FAQ</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </nav>
-
-  <div class="footer-contact">
-    <p class="footer-nav-label">Contacto</p>
-    <ul>
-      <li><a href="https://wa.me/34XXXXXXXXX" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
-      <li><a href="https://instagram.com/almaprint" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-      <li><a href="mailto:hola@almaprint.es">hola@almaprint.es</a></li>
-    </ul>
-  </div>
-
-</div>
-
-<div class="footer-bar">
-  <div class="container footer-bar-inner">
-    <p>&copy;&nbsp;<span id="footer-year"></span>&nbsp;AlmaPrint &mdash; Hecho con alma en Tenerife.</p>
-  </div>
-</div>
-```
-
-  </footer>
 
   <script src="script.js"></script>
-
 </body>
 </html>
